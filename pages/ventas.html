@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/ventas.css">
+    <script src="../js/receiptAPI.js"></script>
     <title>Ventas</title>
 </head>
 <body>
@@ -47,7 +48,14 @@
         </nav>
     </header>
     <main>
-
+        <div>
+            <h2>Consultá alguna receta 🥗</h2>
+            <input type="text" id="queryInput" placeholder="Ingresa tu consulta">
+            <button id="consultarBtn" onclick="fetchAPI()">Consultar</button>
+        </div>
+        <div>
+            <textarea name="resultArea" id="resultArea" cols="100" rows="30" wrap="soft"></textarea>
+        </div>
     </main>
 
     <footer>
